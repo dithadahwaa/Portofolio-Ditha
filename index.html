@@ -1,223 +1,173 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="theme-color" content="#f5f9ff">
-  <meta name="description" content="Portofolio pribadi Ditha — ruang kecil untuk berbagi cerita, hal yang dipelajari, dan karya yang dibuat.">
-  <title>Ditha — Profil Pribadi</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
-  <script src="script.js" defer></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ditha Dahwaniah | Personal Journal</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
 </head>
+
 <body>
-  <header class="site-header">
-    <nav class="nav container" aria-label="Navigasi utama">
-      <a class="brand" href="#beranda" aria-label="Ditha, kembali ke beranda">
-        <span class="brand-mark">d.</span>
-        <span>Ditha<span class="brand-period">.</span></span>
-      </a>
 
-      <button class="menu-toggle" type="button" aria-label="Buka menu navigasi" aria-expanded="false" aria-controls="nav-links">
-        <span></span>
-        <span></span>
-      </button>
+    <header class="navbar">
+        <a href="#home" class="logo">Ditha's Journal<span>.</span></a>
 
-      <div class="nav-links" id="nav-links">
-        <a class="nav-link active" href="#beranda">Beranda</a>
-        <a class="nav-link" href="#tentang">Tentang</a>
-        <a class="nav-link" href="#keahlian">Keahlian</a>
-        <a class="nav-link" href="#karya">Karya</a>
-        <a class="nav-contact" href="#kontak">Hubungi saya <span aria-hidden="true">↗</span></a>
-      </div>
-    </nav>
-  </header>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#about">About Me</a>
+            <a href="#experience">Experience</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
 
-  <main>
-    <section class="hero section container" id="beranda">
-      <div class="hero-copy">
-        <p class="eyebrow"><span class="status-dot"></span> Senang kamu mampir ke sini</p>
-        <h1>Hai, aku <span class="highlight">Ditha.</span><br>Senang berkenalan<br class="desktop-break"> denganmu!</h1>
-        <p class="hero-description">Aku seorang pelajar yang suka belajar hal baru, menuangkan ide, dan mencoba membuat sesuatu yang bermanfaat.</p>
-        <div class="hero-actions">
-          <a class="button button-primary" href="#karya">Lihat karya saya <span aria-hidden="true">↗</span></a>
-          <a class="text-link" href="#tentang">Kenalan lebih dekat <span aria-hidden="true">↓</span></a>
-        </div>
-        <div class="hero-note">
-          <span class="note-line"></span>
-          <p>Pelan-pelan, tapi selalu belajar hal baru.</p>
-        </div>
-      </div>
+    <main>
+        <!-- HOME -->
+        <section id="home" class="hero">
+            <div class="hero-decoration decoration-one">✦</div>
+            <div class="hero-decoration decoration-two">✧</div>
 
-      <div class="hero-art" aria-label="Ilustrasi profil Ditha" role="img">
-        <div class="art-orbit orbit-one"></div>
-        <div class="art-orbit orbit-two"></div>
-        <div class="art-sparkle sparkle-one" aria-hidden="true">✳</div>
-        <div class="art-sparkle sparkle-two" aria-hidden="true">✦</div>
-        <div class="portrait-card">
-          <div class="portrait-top">
-            <span class="portrait-label">A LITTLE INTRODUCTION</span>
-            <span class="portrait-menu" aria-hidden="true">•••</span>
-          </div>
-          <div class="portrait-illustration" aria-hidden="true">
-            <div class="portrait-hair"></div>
-            <div class="portrait-neck"></div>
-            <div class="portrait-face">
-              <span class="face-eye eye-left"></span>
-              <span class="face-eye eye-right"></span>
-              <span class="face-blush blush-left"></span>
-              <span class="face-blush blush-right"></span>
-              <span class="face-smile"></span>
+            <div class="hero-content">
+                <p class="eyebrow">WELCOME TO MY LITTLE JOURNAL</p>
+
+                <h1>
+                    Hello, I'm<br>
+                    <span id="typed-name"></span><span class="cursor">|</span>
+                </h1>
+
+                <p class="hero-description">
+                    Mahasiswa Sistem Informasi
+                </p>
+
+                <p class="hero-note">
+                    A little space for my stories, dreams, and journey.
+                </p>
+
+                <a href="#about" class="primary-button">
+                    Kenali Aku Lebih Dekat <span>↓</span>
+                </a>
             </div>
-            <div class="portrait-body"></div>
-            <div class="portrait-collar"></div>
-          </div>
-          <div class="portrait-caption">
-            <div>
-              <strong>Ditha</strong>
-              <span>Pelajar · Penikmat hal-hal sederhana</span>
+
+            <div class="hero-bottom-note">
+                <span>♡</span> collecting moments, creating stories
             </div>
-            <span class="caption-heart" aria-hidden="true">♡</span>
-          </div>
-        </div>
-        <div class="floating-card">
-          <span class="floating-icon" aria-hidden="true">✿</span>
-          <span>Selalu ingin<br>bertumbuh</span>
-        </div>
-        <div class="art-caption">sedang merangkai cerita sendiri <span aria-hidden="true">✎</span></div>
-      </div>
-      <a class="scroll-cue" href="#tentang"><span></span> Gulir perlahan</a>
-    </section>
+        </section>
 
-    <section class="about section section-soft" id="tentang">
-      <div class="container about-grid">
-        <div class="section-heading reveal">
-          <p class="eyebrow">SEDIKIT TENTANG SAYA</p>
-          <h2>Masih banyak<br>yang ingin <span class="highlight">dipelajari.</span></h2>
-        </div>
-        <div class="about-copy reveal">
-          <p class="about-lead">Aku percaya, hal-hal hebat sering dimulai dari rasa ingin tahu yang sederhana.</p>
-          <p>Saat ini aku sedang menikmati proses belajar dan mencoba banyak hal baru. Mulai dari mengerjakan tugas, mencari inspirasi, sampai mengubah ide kecil menjadi sesuatu yang bisa dibagikan.</p>
-          <p>Di luar itu, aku suka menikmati waktu dengan hal-hal sederhana. Bagiku, setiap proses punya ceritanya sendiri, dan aku ingin terus bertumbuh sambil menjalaninya.</p>
-          <a class="text-link" href="#kontak">Yuk, saling menyapa <span aria-hidden="true">↗</span></a>
-        </div>
-      </div>
-    </section>
+        <!-- ABOUT ME -->
+        <section id="about" class="section">
+            <div class="section-heading">
+                <p class="eyebrow">A LITTLE ABOUT ME</p>
+                <h2>About Me <span>♡</span></h2>
+            </div>
 
-    <section class="skills section container" id="keahlian">
-      <div class="section-heading centered reveal">
-        <p class="eyebrow">YANG SEDANG KUSUKAI</p>
-        <h2>Hal-hal yang <span class="highlight">aku tekuni.</span></h2>
-        <p class="section-intro">Belum semuanya dikuasai, tapi selalu seru untuk terus dicoba.</p>
-      </div>
-      <div class="skill-grid">
-        <article class="skill-card reveal">
-          <span class="skill-number">01</span>
-          <span class="skill-icon icon-blue" aria-hidden="true">⌘</span>
-          <h3>Desain &amp; kreativitas</h3>
-          <p>Suka merapikan ide dan mencari cara agar sesuatu terasa enak dilihat.</p>
-          <div class="skill-tags"><span>Canva</span><span>Visual</span><span>Ide</span></div>
-        </article>
-        <article class="skill-card reveal">
-          <span class="skill-number">02</span>
-          <span class="skill-icon icon-lilac" aria-hidden="true">&lt;/&gt;</span>
-          <h3>Web &amp; teknologi</h3>
-          <p>Belajar memahami cara kerja web dan mencoba membangunnya sendiri.</p>
-          <div class="skill-tags"><span>HTML</span><span>CSS</span><span>Belajar</span></div>
-        </article>
-        <article class="skill-card reveal">
-          <span class="skill-number">03</span>
-          <span class="skill-icon icon-peach" aria-hidden="true">✎</span>
-          <h3>Menulis &amp; bercerita</h3>
-          <p>Menikmati proses merangkai kata supaya ide terasa lebih dekat.</p>
-          <div class="skill-tags"><span>Menulis</span><span>Catatan</span><span>Cerita</span></div>
-        </article>
-      </div>
-    </section>
+            <div class="paper-card about-card">
+                <div class="tape"></div>
 
-    <section class="projects section section-soft" id="karya">
-      <div class="container">
-        <div class="projects-heading reveal">
-          <div class="section-heading">
-            <p class="eyebrow">CATATAN KECIL DARI PROSES BELAJAR</p>
-            <h2>Beberapa hal yang<br><span class="highlight">pernah kubuat.</span></h2>
-          </div>
-          <p class="projects-intro">Setiap karya punya ceritanya sendiri. Ini beberapa contoh ruang untuk menampilkan proses dan hasil belajarku.</p>
-        </div>
-        <div class="project-grid">
-          <article class="project-card reveal">
-            <div class="project-visual visual-journal">
-              <div class="journal-window">
-                <span class="window-dots"><i></i><i></i><i></i></span>
-                <div class="journal-content">
-                  <span class="mini-label">MY LITTLE SPACE</span>
-                  <span class="journal-title">A place to<br>collect thoughts.</span>
-                  <span class="journal-line"></span>
-                  <span class="journal-line short"></span>
+                <p class="about-title">
+                    Merangkai Kata, Mengukir Cerita!
+                </p>
+
+                <div class="about-text">
+                    <p>Hai semuanya, aku Ditha!</p>
+
+                    <p>
+                        Dengan satu pena dan sejuta cerita, semoga suatu hari
+                        nanti namaku hidup dalam sebuah karya, dan kata-kataku
+                        menemukan rumah di hati para pembacanya. Tak hanya
+                        kata, aku juga ingin merangkai data, menggali makna
+                        di balik angka, dan terus bertumbuh di dunia teknologi
+                        informasi!
+                    </p>
                 </div>
-                <span class="journal-flower" aria-hidden="true">✿</span>
-              </div>
-            </div>
-            <div class="project-details">
-              <div><span class="project-type">WEB DESIGN</span><span class="project-index">01 / 03</span></div>
-              <h3>Ruang Catatan</h3>
-              <p>Konsep halaman sederhana untuk menyimpan cerita dan hal-hal yang menginspirasi.</p>
-            </div>
-          </article>
-          <article class="project-card reveal">
-            <div class="project-visual visual-moodboard">
-              <div class="moodboard">
-                <div class="mood-tile tile-blue">take<br>your time</div>
-                <div class="mood-tile tile-photo"><span>☁</span></div>
-                <div class="mood-tile tile-cream">a softer<br>kind of day</div>
-                <div class="mood-tile tile-lilac">✿</div>
-              </div>
-            </div>
-            <div class="project-details">
-              <div><span class="project-type">VISUAL NOTES</span><span class="project-index">02 / 03</span></div>
-              <h3>Moodboard Hari Ini</h3>
-              <p>Kumpulan warna dan suasana yang jadi inspirasi untuk proyek berikutnya.</p>
-            </div>
-          </article>
-          <article class="project-card reveal">
-            <div class="project-visual visual-profile">
-              <div class="profile-preview">
-                <div class="preview-top"><span>d.</span><span>ABOUT&nbsp;&nbsp; WORK&nbsp;&nbsp; HI!</span></div>
-                <div class="preview-copy"><span>HELLO, I'M DITHA</span><strong>Growing at<br>my own pace.</strong><i></i></div>
-                <div class="preview-circle"></div>
-              </div>
-            </div>
-            <div class="project-details">
-              <div><span class="project-type">PERSONAL PROJECT</span><span class="project-index">03 / 03</span></div>
-              <h3>Profil Pribadi</h3>
-              <p>Halaman kecil untuk memperkenalkan diri dan berbagi apa yang sedang kupelajari.</p>
-            </div>
-          </article>
-        </div>
-      </div>
-    </section>
 
-    <section class="contact section container" id="kontak">
-      <div class="contact-card reveal">
-        <div class="contact-decoration decoration-one" aria-hidden="true">✳</div>
-        <div class="contact-decoration decoration-two" aria-hidden="true">✦</div>
-        <p class="eyebrow">SAMPAI JUMPA DI INBOX?</p>
-        <h2>Punya cerita atau ide?<br><span>Dengan senang hati!</span></h2>
-        <p class="contact-copy">Kalau ingin ngobrol, berbagi inspirasi, atau sekadar menyapa, kirim pesan saja ya.</p>
-        <a class="button button-light" href="mailto:halo@example.com">Kirim pesan <span aria-hidden="true">↗</span></a>
-        <span class="contact-small">Tidak harus soal hal besar kok :)</span>
-      </div>
-    </section>
-  </main>
+                <div class="paper-footer">
+                    <span>with love, Ditha</span>
+                    <span>✿</span>
+                </div>
+            </div>
+        </section>
 
-  <footer class="site-footer">
-    <div class="container footer-inner">
-      <a class="brand footer-brand" href="#beranda"><span class="brand-mark">d.</span><span>Ditha<span class="brand-period">.</span></span></a>
-      <p>Dibuat dengan hati, kopi, dan sedikit rasa penasaran.</p>
-      <span class="footer-year">© <span id="year"></span> Ditha</span>
-    </div>
-  </footer>
+        <!-- EXPERIENCE -->
+        <section id="experience" class="section experience-section">
+            <div class="section-heading">
+                <p class="eyebrow">MY JOURNEY SO FAR</p>
+                <h2>Experience <span>✧</span></h2>
+                <p class="section-description">
+                    Beberapa pengalaman yang menjadi bagian dari ceritaku.
+                </p>
+            </div>
+
+            <div class="experience-list">
+                <article class="experience-card">
+                    <div class="experience-icon">✦</div>
+                    <div>
+                        <p class="experience-label">INFORMATIKA</p>
+                        <h3>Peserta OSN Informatika Tahun 2024</h3>
+                    </div>
+                    <span class="experience-number">01</span>
+                </article>
+
+                <article class="experience-card">
+                    <div class="experience-icon">✿</div>
+                    <div>
+                        <p class="experience-label">ACHIEVEMENT</p>
+                        <h3>Juara 1 Editorial Event Sartala SMA Negeri 2 Pontianak</h3>
+                    </div>
+                    <span class="experience-number">02</span>
+                </article>
+
+                <article class="experience-card">
+                    <div class="experience-icon">♡</div>
+                    <div>
+                        <p class="experience-label">CREATIVE WRITING</p>
+                        <h3>Penulis Naskah Drama "Malaya" XI M1</h3>
+                    </div>
+                    <span class="experience-number">03</span>
+                </article>
+            </div>
+        </section>
+
+        <!-- CONTACT -->
+        <section id="contact" class="section contact-section">
+            <div class="contact-card">
+                <p class="eyebrow">LET'S CONNECT</p>
+                <h2>Find Me Here <span>♡</span></h2>
+
+                <p class="contact-description">
+                    Mari terhubung dan ikuti perjalanan ceritaku!
+                </p>
+
+                <div class="social-links">
+                    <a
+                        href="https://www.instagram.com/deithaniaa?mdxt=MWt2MGVzcjk2YnJqeQ=="
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="social-button"
+                    >
+                        <span>◎</span> Instagram
+                    </a>
+
+                    <a
+                        href="https://github.com/dithadahwaa"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="social-button"
+                    >
+                        <span>⌘</span> GitHub
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Made with ♡ by Ditha Dahwaniah</p>
+        <p class="footer-note">Every little thing is part of the story.</p>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
